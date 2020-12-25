@@ -1,0 +1,11 @@
+﻿<vertical child-control-height='false'>
+  <horizontal horizontal-fit='PreferredSize' bg='panel-top' pad-left='10' pad-right='10'>
+    <text text='Physics' font-size='10'></text>
+  </horizontal>
+  <vertical vertical-fit='PreferredSize' pad='2'>
+    <increment-setting text='Velocity Multiplier' value='velocity' min='-2' max='2' increment='0.1'  apply-on-change='true' bind-value='true'></increment-setting>
+    <increment-setting text='Drag Multiplier' value='drag' min='0.2' increment='0.2' apply-on-change='true' bind-value='true'></increment-setting>
+    <bool-setting text='Enable Gravity' value='enable-gravity' apply-on-change='true' bind-value='true'></bool-setting>
+    <bool-setting text='Prevent Rotations' value='rot-freeze' apply-on-change='true' bind-value='true'></bool-setting>
+  </vertical>
+</vertical>

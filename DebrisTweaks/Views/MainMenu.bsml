@@ -1,0 +1,12 @@
+<vertical child-control-height='false' pad='2'>
+  <bool-setting text='Enable Tweaks' value='master-enabled' on-change='enabled-onchange' apply-on-change='true'></bool-setting>
+  <vertical vertical-fit='PreferredSize' preferred-height='54' pad='2'>
+  </vertical>
+  <vertical vertical-fit='PreferredSize' bg='panel-top' pad='2'>
+    <bool-setting id='element-nospawn' text='Force Disable Debris' interactable='~master-enabled' value='nospawn' apply-on-change='true'></bool-setting>
+    <horizontal preferred-width='40'>
+      <button text='Test Debris!' on-click='test-debris'></button>
+      <button text='Reset Config' on-click='reset'></button>
+    </horizontal>
+  </vertical>
+</vertical>
