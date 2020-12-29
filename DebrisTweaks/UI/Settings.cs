@@ -32,8 +32,8 @@ namespace DebrisTweaks
         }
         public float Drag
         {
-            get => config.GetFloat("Physics", "Drag Multiplier", 1);
-            set => config.SetFloat("Physics", "Drag Multiplier", value);
+            get => config.GetFloat("Physics", "Drag", 0);
+            set => config.SetFloat("Physics", "Drag", value);
         }
         public bool FreezeRotations
         {

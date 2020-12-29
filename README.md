@@ -10,7 +10,7 @@ Ported from [DebrisTweaksQuest](https://github.com/Raemien/DebrisTweaksQuest) in
 * **Enable Gravity:** Should note debris react to gravity?
 * **Prevent Rotations:** Should note debris rotate while in motion?
 * **Velocity Multiplier:** Multiply the initial velocity of all debris by this amount.
-* **Drag Multiplier:** Multiply the amount of air resistance all debris experience.
+* **Drag:** The amount of air resistance all debris experience.
 
 ### Cosmetic
 * **Override Lifetime:** Sets whether the base-game lifespan system is overriden.

@@ -20,7 +20,7 @@ namespace DebrisTweaks.HarmonyPatches
             Rigidbody rbody = __instance.GetComponent<Rigidbody>();
             rbody.useGravity = config.EnableGravity;
             rbody.freezeRotation = config.FreezeRotations;
-            rbody.drag *= config.Drag;
+            rbody.drag = config.Drag;
             __instance.transform.localScale = Vector3.one * config.Scale;
         }
     }

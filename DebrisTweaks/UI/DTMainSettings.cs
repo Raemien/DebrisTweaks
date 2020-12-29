@@ -61,7 +61,7 @@ namespace DebrisTweaks
             Settings.instance.DebrisLifespan = 2;
             Settings.instance.Velocity = 1;
             Settings.instance.Scale = 1;
-            Settings.instance.Drag = 1;
+            Settings.instance.Drag = 0;
             UISingleton.flowCoordinator.RefreshCache();
             UISingleton.flowCoordinator.ApplyResponsiveVisibility(true);
         }
@@ -77,7 +77,7 @@ namespace DebrisTweaks
                 {
                     Logger.log.Info("Starting debris test...");
                     lstart.StartLevel();
-                    break;
+                    return;
                 } 
             }
         }
