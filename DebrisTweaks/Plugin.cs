@@ -1,13 +1,11 @@
 ﻿using HarmonyLib;
 using IPA;
 using IPA.Config;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using IPALogger = IPA.Logging.Logger;
 
 namespace DebrisTweaks
 {
-    [Plugin(RuntimeOptions.SingleStartInit)]
+    [Plugin(RuntimeOptions.DynamicInit)]
     public class Plugin
     {
         public const string assemblyName = "DebrisTweaks";
