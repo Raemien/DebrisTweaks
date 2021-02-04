@@ -30,7 +30,7 @@ namespace DebrisTweaks
         {
             if (Settings.instance.EnableTweaks && harmPatcher == null)
             {
-                harmPatcher = new Harmony("DebrisTweaks");
+                harmPatcher = new Harmony(assemblyName);
                 harmPatcher.PatchAll();
             }
         }
@@ -38,7 +38,7 @@ namespace DebrisTweaks
         [OnDisable]
         public static void Disable()
         {
-            harmPatcher.UnpatchAll();
+            harmPatcher.UnpatchAll(assemblyName);
             harmPatcher = null;
         }
 
